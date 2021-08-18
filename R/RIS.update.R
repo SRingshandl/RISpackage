@@ -1,6 +1,6 @@
 #' Update the RISpackage
 #'
-#' This function allows you to update the RISpackage from github
+#' This function allows you to update the RISpackage from github.
 #' @keywords RISpackage
 #' @keywords update
 #' @export
@@ -20,14 +20,16 @@ RIS.update <- function() {
       library(devtools)
     }
 
+    cat("detaching RISpackage")
     detach("package:RISpackage", unload = TRUE)
 
     later(function() {
       devtools::install_github('SRingshandl/RISpackage')
       library("RISpackage")
-      }, 10)
+      cat("RISpackage updating and attaching via library! Please wait!")
+      }, 8)
 
-    cat("RISpackage updating and attaching via library! Please wait!")
+    cat("RISpackage updated!")
   }
 }
 

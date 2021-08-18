@@ -7,7 +7,7 @@
 RIS.update()
 }
 \description{
-This function allows you to update the RISpackage from github
+This function allows you to update the RISpackage from github.
 }
 \examples{
 RIS.update()
