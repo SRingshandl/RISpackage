@@ -30,7 +30,6 @@ RIS.update <- function() {
       cat("RISpackage updating and attaching via library! Please wait!")
       }, 8)
 
-    cat("RISpackage updated!")
   }
 }
 
