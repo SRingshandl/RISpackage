@@ -20,6 +20,8 @@ RIS.update <- function() {
       library(devtools)
     }
 
+    detach("package:RISpackage", unload = TRUE)
+
     later(function() {
       devtools::install_github('SRingshandl/RISpackage')
       library("RISpackage")
