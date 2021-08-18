@@ -20,9 +20,12 @@ RIS.update <- function() {
       library(devtools)
     }
 
-    devtools::install_github('SRingshandl/RISpackage')
-    library("RISpackage")
-    cat("RISpackage updated and attached via library!")
+    later(function() {
+      devtools::install_github('SRingshandl/RISpackage')
+      library("RISpackage")
+      }, 10)
+
+    cat("RISpackage updating and attaching via library! Please wait!")
   }
 }
 
