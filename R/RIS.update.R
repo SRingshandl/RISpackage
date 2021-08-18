@@ -3,6 +3,7 @@
 #' This function allows you to update the RISpackage from github.
 #' @keywords RISpackage
 #' @keywords update
+#' @import later
 #' @export
 #' @examples
 #' RIS.update()
