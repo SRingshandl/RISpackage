@@ -13,4 +13,5 @@ This function allows you to update the RISpackage from github.
 RIS.update()
 }
 \keyword{RISpackage}
+\keyword{github}
 \keyword{update}

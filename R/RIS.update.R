@@ -2,6 +2,7 @@
 #'
 #' This function allows you to update the RISpackage from github.
 #' @keywords RISpackage
+#' @keywords github
 #' @keywords update
 #' @import later
 #' @export
@@ -27,9 +28,6 @@ RIS.update <- function() {
     later(function() {
       cat("RISpackage updating and attaching via library! Please wait!\n")
       devtools::install_github('SRingshandl/RISpackage')
-      library("RISpackage")
-      cat("RISpackage should be updated now!\n")
-      cat("You might want to restart your R session!\n")
       }, 5)
 
   }
