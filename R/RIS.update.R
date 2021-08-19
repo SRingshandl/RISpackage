@@ -25,10 +25,12 @@ RIS.update <- function() {
     detach("package:RISpackage", unload = TRUE)
 
     later(function() {
+      cat("RISpackage updating and attaching via library! Please wait!\n")
       devtools::install_github('SRingshandl/RISpackage')
       library("RISpackage")
-      cat("RISpackage updating and attaching via library! Please wait!")
-      }, 8)
+      cat("RISpackage should be updated now!\n")
+      cat("You might want to restart your R session!\n")
+      }, 5)
 
   }
 }
