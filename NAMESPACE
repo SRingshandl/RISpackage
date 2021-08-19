@@ -2,5 +2,6 @@
 
 export(RIS.source)
 export(RIS.test)
+export(RIS.troll)
 export(RIS.update)
 import(later)
