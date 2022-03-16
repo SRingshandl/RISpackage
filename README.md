@@ -9,7 +9,7 @@ devtools::install_github('SRingshandl/RISpackage')
 library("RISpackage")  
 
 ## Contents for now:  
-RIS.asJob - execute code as a RStudio job without saving the code in a new file beforehand. Kind of similar to parallelizing but easier  
+RIS.asJob - execute code as a RStudio job without saving the code in a new file beforehand
 RIS.update - update RISpackage without further commands  
 RIS.source - source only a part of a R script and not the whole (as source() would do)  
 RIS.test - check whether RISpackage is installed and loaded correctly  
