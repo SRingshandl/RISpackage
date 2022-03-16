@@ -1,0 +1,45 @@
+#GUIDE TO WRITE NEW PACKAGE
+
+#Installation
+install.packages("devtools")
+library("devtools")
+devtools::install_github("klutometis/roxygen")
+library(roxygen2)
+
+#For new packages create a corresponding space
+setwd("parent_directory") #change directory accordingly
+create("cats")
+
+#' A Cat Function
+#'
+#' This function allows you to express your love of cats.
+#' @param love Do you love cats? Defaults to TRUE.
+#' @keywords cats
+#' @export
+#' @examples
+#' cat_function()
+
+cat_function <- function(love=TRUE){
+  if(love==TRUE){
+    print("I love cats!")
+  }
+  else {
+    print("I am not a cool person.")
+  }
+}
+
+setwd("./cats")
+document()
+
+setwd("..")
+install("cats")
+
+#for adding new functions
+put a new R script with one function in folder R
+adapt description and save
+run document()
+upload to Github
+run RIS.update()
+
+#more information
+https://www.r-bloggers.com/2014/04/writing-an-r-package-from-scratch/
